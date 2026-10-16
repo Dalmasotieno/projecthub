@@ -269,6 +269,62 @@ header a.active {
   background: #4facfe;
 }
 
+/* ---------- Contact cards ---------- */
+.contact-intro { text-align: center; margin-bottom: 30px; }
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-bottom: 50px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: #fff;
+  color: #222;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  min-width: 0;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.contact-icon {
+  flex: 0 0 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: #222;
+}
+
+.contact-text { display: flex; flex-direction: column; min-width: 0; }
+.contact-text strong { font-size: 1.05rem; }
+.contact-text span { font-size: 0.9rem; color: #555; overflow-wrap: anywhere; }
+
+.contact-card.email .contact-icon    { background: #ea4335; }
+.contact-card.github .contact-icon   { background: #24292e; }
+.contact-card.facebook .contact-icon { background: #1877f2; }
+.contact-card.whatsapp .contact-icon { background: #25d366; }
+.contact-card.linkedin .contact-icon { background: #0a66c2; }
+.contact-card.x .contact-icon        { background: #000; }
+
+.form-title { text-align: center; margin-bottom: 18px; }
+
+@media (max-width: 900px) { .contact-grid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }
+
 /* ================= Responsive ================= */
 img { max-width: 100%; height: auto; }
 
