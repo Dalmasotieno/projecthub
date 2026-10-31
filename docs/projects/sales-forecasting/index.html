@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Forecasting Case Study | Dalmas Otieno</title>
+  <meta name="description" content="Case study: forecasting sales for a Kenyan baby products retailer. SARIMA reached a test WAPE of 5.57% against 37.90% for the baseline.">
+  <meta name="theme-color" content="#222222">
+  <link rel="icon" href="../../assets/images/favicon.png">
+  <link rel="canonical" href="https://dalmasotieno.github.io/projecthub/projects/sales-forecasting/">
+
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Sales Forecasting Case Study | Dalmas Otieno">
+  <meta property="og:description" content="SARIMA forecasting for a Kenyan baby products retailer: 5.57% test WAPE.">
+  <meta property="og:image" content="https://dalmasotieno.github.io/projecthub/assets/images/preview.png">
+  <meta property="og:url" content="https://dalmasotieno.github.io/projecthub/projects/sales-forecasting/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="stylesheet" href="../../assets/css/style.css">
+</head>
+<body>
+
+<header>
+  <nav class="container">
+    <h1>Dalmas Otieno</h1>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
+    <ul id="navLinks">
+      <li><a href="../../home/">Home</a></li>
+      <li><a href="../../about/">About</a></li>
+      <li><a href="../../skills/">Skills</a></li>
+      <li><a href="../../projects/" class="active">Projects</a></li>
+      <li><a href="../../contact/">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="page-main">
+  <section class="section container case-page">
+    <p class="breadcrumb"><a href="../">&larr; Back to projects</a></p>
+
+    <h2>Sales Forecasting for a Kenyan Baby Retailer</h2>
+
+    <div class="tags">
+      <span>Python</span>
+      <span>Time Series</span>
+      <span>SARIMA</span>
+      <span>Streamlit</span>
+      <span>Tableau</span>
+    </div>
+
+    <h3>The problem</h3>
+    <p>A baby products retailer in Kenya needed to predict future sales so it could plan stock and cash flow.</p>
+
+    <h3>My approach</h3>
+    <p>I worked with the retailer's monthly sales history. Sales follow a yearly pattern, so the models were tested on their ability to capture a 12-month seasonal cycle.</p>
+    <p>I compared four forecasting approaches. The best one was chosen on validation months, then scored on separate test months it had not seen.</p>
+    <ul>
+      <li>Seasonal-naive, used as the baseline</li>
+      <li>Holt-Winters (additive)</li>
+      <li>Holt-Winters (damped)</li>
+      <li>SARIMA(0,1,1)(0,1,1,12), the selected model</li>
+    </ul>
+
+    <h3>Results</h3>
+    <p>I measured error with WAPE (weighted absolute percentage error), which compares the total forecast error with actual sales. Lower is better.</p>
+
+    <div class="results-table-wrap">
+      <table class="results-table">
+        <caption>WAPE (%) by model</caption>
+        <thead>
+          <tr><th>Model</th><th>Validation</th><th>Test</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Seasonal-naive (baseline)</td><td>58.57</td><td>37.90</td></tr>
+          <tr><td>Holt-Winters (additive)</td><td>15.29</td><td>15.18</td></tr>
+          <tr><td>Holt-Winters (damped)</td><td>14.85</td><td>10.62</td></tr>
+          <tr class="best"><td>SARIMA (selected)</td><td>13.52</td><td>5.57</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>SARIMA scored 13.52% on validation and 5.57% on the test months, compared with 37.90% for the baseline. That is 85.3% lower error and under the 10% target.</p>
+
+    <h3>What I would do next</h3>
+    <p>SARIMA scored 13.52% on validation, above the 10% target, and 5.57% on the test months. To confirm the result holds, I would test it over a longer window and retrain it regularly as new months of sales arrive.</p>
+    <h3>Video walkthrough</h3>
+<div class="video-wrap">
+  <video controls preload="none" poster="../../assets/images/preview.png">
+    <source src="../../assets/video/sales-forecasting-walkthrough.mp4" type="video/mp4">
+    Your browser does not support video. <a href="../../assets/video/sales-forecasting-walkthrough.mp4">Download the video</a>.
+  </video>
+</div>
+
+    <h3>See it for yourself</h3>
+    <div class="project-links">
+      <a class="project-link" href="https://github.com/Dalmasotieno/sales/blob/main/Sales_Forecasting_Kenyan_Baby_Products_Retailer.ipynb" target="_blank" rel="noopener noreferrer">Notebook</a>
+      <a class="project-link" href="https://docs.google.com/presentation/d/1kswU8ISiDTqyRURRFYpscX3BDiLojnta/edit?usp=sharing&amp;ouid=105636993682315959072&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">Slides</a>
+      <a class="project-link" href="https://baby-retail-forecast.streamlit.app/" target="_blank" rel="noopener noreferrer">Live App</a>
+      <a class="project-link" href="https://public.tableau.com/app/profile/otieno.owino/viz/SalesForecasting_17927578408620/ExecutiveOverview" target="_blank" rel="noopener noreferrer">Dashboard</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 Dalmas Otieno. All rights reserved.</p>
+</footer>
+
+<script src="../../assets/js/script.js"></script>
+</body>
+</html>

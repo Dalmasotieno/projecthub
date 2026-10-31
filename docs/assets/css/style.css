@@ -1,3 +1,4 @@
+:root { color-scheme: light dark; }
 * {
   margin: 0;
   padding: 0;
@@ -70,7 +71,7 @@ header a:hover {
   text-align: center;
   padding: 60px 20px;
   color: #fff;
-  background: linear-gradient(to right, #4facfe, #00f2fe);
+  background: linear-gradient(to right, #1565c0, #0b7a9e);
 }
 
 .profile-img {
@@ -139,6 +140,9 @@ button:hover {
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ---------- Projects ---------- */
@@ -228,6 +232,7 @@ header a.active {
   text-decoration: none;
   padding: 12px 22px;
   font-size: 0.95rem;
+  border: 2px solid #fff;
 }
 
 .btn:hover {
@@ -412,4 +417,123 @@ img { max-width: 100%; height: auto; }
 @media (max-width: 380px) {
   .skills-grid { grid-template-columns: 1fr; }
   header h1 { font-size: 1.15rem; }
+}
+   .hero-buttons { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+   .btn-outline { background: transparent; color: #fff; border: 2px solid #fff; }
+   .btn-outline:hover { background: #fff; color: #222; }
+
+   /* ---------- About page ---------- */
+.about-text { max-width: 720px; margin: 0 auto 18px; }
+.about-cta { text-align: center; margin-top: 30px; display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+
+/* ---------- Keyboard focus ---------- */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #00f0ff;
+  outline-offset: 3px;
+}
+/* ---------- Case study card ---------- */
+.case-study { grid-column: 1 / -1; max-width: 800px; margin: 0 auto; width: 100%; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.tags span { background: #eef3fb; color: #222; font-size: 0.8rem; padding: 4px 12px; border-radius: 20px; }
+.project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; } 
+
+/* ---------- Education cards ---------- */
+.edu-title { text-align: center; margin: 50px 0 20px; font-size: 1.5rem; }
+.edu-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; max-width: 800px; margin: 0 auto; }
+.edu-card { background: #fff; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+/*.edu-card img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; display: block; }*/
+   .edu-card img { width: 100%; aspect-ratio: 2 / 3; object-fit: cover; object-position: 50% 20%; display: block; }
+.edu-body { padding: 16px 18px 20px; }
+.edu-body h4 { font-size: 1.1rem; margin-bottom: 4px; }
+.edu-school { font-weight: bold; color: #1565c0; margin-bottom: 2px; }
+.edu-year { color: #555; font-size: 0.9rem; margin: 0; }
+@media (max-width: 700px) { .edu-grid { grid-template-columns: 1fr; } }
+
+
+/* ---------- Case study page ---------- */
+.case-page { max-width: 800px; }
+.case-page h3 { margin: 28px 0 10px; font-size: 1.3rem; }
+.case-page p { margin-bottom: 14px; }
+.case-page ul { margin: 0 0 18px 22px; }
+.case-page li { margin-bottom: 6px; }
+.breadcrumb { margin-bottom: 10px; }
+.breadcrumb a { color: #1565c0; text-decoration: none; }
+.breadcrumb a:hover { text-decoration: underline; }
+
+/* ---------- Results table ---------- */
+.results-table-wrap { width: 100%; overflow-x: auto; margin-bottom: 20px; }
+.results-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+.results-table caption { text-align: left; font-weight: bold; margin-bottom: 8px; }
+.results-table th, .results-table td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+.results-table th { background: #222; color: #fff; }
+.results-table th:nth-child(n+2), .results-table td:nth-child(n+2) { text-align: right; }
+.results-table .best td { background: #e8f5e9; font-weight: bold; }
+
+/* ---------- Video ---------- */
+.video-wrap { width: 100%; margin-bottom: 20px; }
+.video-wrap video { width: 100%; height: auto; display: block; border-radius: 8px; background: #000; }
+
+/* ---------- Work with me ---------- */
+.services-intro { max-width: 640px; margin: 0 auto 30px; text-align: center; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.service-card { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); }
+.service-card h3 { margin-bottom: 10px; }
+.service-card p { margin-bottom: 12px; }
+.service-card ul { margin: 0 0 0 20px; }
+.service-card li { margin-bottom: 6px; font-size: 0.95rem; }
+.services-cta { text-align: center; margin-top: 30px; }
+@media (max-width: 900px) { .services-grid { grid-template-columns: 1fr; } }
+
+/* ---------- Open to work badge ---------- */
+.open-badge { display: inline-block; background: rgba(255, 255, 255, 0.15); border: 1px solid #fff; color: #fff; padding: 6px 14px; border-radius: 20px; font-size: 0.9rem; margin-bottom: 20px; }
+.open-badge::before { content: ""; display: inline-block; width: 9px; height: 9px; background: #4cd964; border-radius: 50%; margin-right: 8px; }
+/* ---------- Availability ---------- */
+.availability { text-align: center; color: #555; margin-bottom: 30px; }
+.contact-intro + .availability { margin-top: -18px; }
+
+/* ---------- FAQ ---------- */
+.faq-title { margin-top: 60px; }
+.faq { max-width: 700px; margin: 0 auto; }
+.faq details { background: #fff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); padding: 14px 18px; margin-bottom: 12px; }
+.faq summary { font-weight: bold; cursor: pointer; }
+.faq summary:focus-visible { outline: 3px solid #00f0ff; outline-offset: 3px; }
+.faq details p { margin-top: 10px; }
+
+/* ---------- Skill groups ---------- */
+.skill-group { margin-bottom: 40px; }
+.skill-group h3 { margin-bottom: 15px; font-size: 1.3rem; }
+.skill-group .skills-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+/* ---------- Copy button ---------- */
+.copy-row { text-align: center; margin: -10px 0 30px; }
+.copy-btn { background: transparent; color: #222; border: 2px solid #222; border-radius: 6px; padding: 10px 20px; }
+.copy-btn:hover { background: #222; color: #fff; }
+
+/* ---------- Back to top ---------- */
+.to-top { position: fixed; right: 20px; bottom: 20px; width: 46px; height: 46px; padding: 0; border-radius: 50%; background: #222; color: #fff; font-size: 1.3rem; line-height: 1; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25); opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.2s, transform 0.2s, visibility 0.2s; z-index: 90; }
+.to-top.show { opacity: 1; visibility: visible; transform: none; }
+.to-top:hover { background: #1565c0; color: #fff; }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* ---------- Dark mode ---------- */
+@media (prefers-color-scheme: dark) {
+  body { background: #121417; color: #e8eaed; }
+  .card, .skill, .contact-card, .service-card, .edu-card, .faq details { background: #1e2227; color: #e8eaed; }
+  .contact-text span, .edu-year, .availability { color: #aab0b8; }
+  .edu-school, .breadcrumb a { color: #6cb0ff; }
+  .tags span { background: #2a3038; color: #e8eaed; }
+  .now-line { background: #1b2a3d; border-left-color: #4facfe; }
+  .project-link { background: #1565c0; }
+  .project-link:hover { background: #4facfe; color: #111; }
+  #contactForm input, #contactForm textarea { background: #1e2227; color: #e8eaed; border-color: #3a4048; }
+  #contactForm button { background: #1565c0; }
+  .results-table th, .results-table td { border-color: #3a4048; }
+  .results-table th { background: #2a3038; }
+  .results-table .best td { background: #1d3b2a; }
+  .copy-btn { color: #e8eaed; border-color: #e8eaed; }
+  .copy-btn:hover { background: #e8eaed; color: #121417; }
+  .to-top { background: #1565c0; }
 }

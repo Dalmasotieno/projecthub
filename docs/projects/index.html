@@ -3,14 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects | Professional Portfolio</title>
+  <meta name="color-scheme" content="light dark">
+  <title>Projects | Dalmas Otieno</title>
+  <meta name="description" content="Projects by Dalmas Otieno: sales forecasting for a Kenyan baby products retailer, with a notebook, slides, Streamlit app and Tableau dashboard.">
+  <meta name="theme-color" content="#222222">
+  <link rel="icon" href="../assets/images/favicon.png">
+  <link rel="canonical" href="https://dalmasotieno.github.io/projecthub/projects/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Dalmas Otieno">
+  <meta property="og:description" content="Data science and web projects, including sales forecasting for a Kenyan retailer.">
+  <meta property="og:image" content="https://dalmasotieno.github.io/projecthub/assets/images/preview.png">
+  <meta property="og:url" content="https://dalmasotieno.github.io/projecthub/projects/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 <header>
   <nav class="container">
-    <h1>Navigation Bar</h1>
+    <h1>Dalmas Otieno</h1>
     <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">&#9776;</button>
     <ul id="navLinks">
       <li><a href="../home/">Home</a></li>
@@ -18,6 +31,7 @@
       <li><a href="../skills/">Skills</a></li>
       <li><a href="../projects/" class="active">Projects</a></li>
       <li><a href="../contact/">Contact</a></li>
+    
     </ul>
   </nav>
 </header>
@@ -25,33 +39,35 @@
 <main class="page-main">
   <section class="section container">
     <h2>Projects</h2>
+
     <div class="projects-grid">
-      <div class="card">
-        <h3>Data Science Portfolio</h3>
-        <p>A personal portfolio notebook for showcasing data science project.</p>
-        <a class="project-link" href="https://github.com/Dalmasotieno/sales/blob/main/Sales_Forecasting_Kenyan_Baby_Products_Retailer.ipynb" target="_blank" rel="noopener noreferrer">View Project</a>
-      </div>
-      <div class="card">
+      <div class="card case-study">
         <h3>Sales Forecasting for a Kenyan Baby Retailer</h3>
-        <p>Slides Presentation.</p>
-        <a class="project-link" href="https://docs.google.com/presentation/d/1kswU8ISiDTqyRURRFYpscX3BDiLojnta/edit?usp=sharing&ouid=105636993682315959072&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">View Project</a>
+        <p><strong>Problem:</strong> A baby products retailer in Kenya needed to predict future sales so it could plan stock and cash flow.</p>
+        <p><strong>What I did:</strong> Analyzed the sales data, built forecasting models, and presented the findings as a notebook, slides, a web app and a dashboard.</p>
+        <p><strong>Result:</strong> The selected model, SARIMA(0,1,1)(0,1,1,12), reached a test WAPE of 5.57%, compared with 37.90% for the baseline (85.3% lower error) and under the 10% target</p>
+
+        <div class="tags">
+          <span>Python</span>
+          <span>Machine Learning</span>
+          <span>Streamlit</span>
+          <span>Tableau</span>
+        </div>
+
+        <div class="project-links">
+          <a class="project-link" href="sales-forecasting/">Case study</a>
+          <a class="project-link" href="https://github.com/Dalmasotieno/sales/blob/main/Sales_Forecasting_Kenyan_Baby_Products_Retailer.ipynb" target="_blank" rel="noopener noreferrer">Notebook</a>
+          <a class="project-link" href="https://docs.google.com/presentation/d/1kswU8ISiDTqyRURRFYpscX3BDiLojnta/edit?usp=sharing&amp;ouid=105636993682315959072&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer">Slides</a>
+          <a class="project-link" href="https://baby-retail-forecast.streamlit.app/" target="_blank" rel="noopener noreferrer">Live App</a>
+          <a class="project-link" href="https://public.tableau.com/app/profile/otieno.owino/viz/SalesForecasting_17927578408620/ExecutiveOverview" target="_blank" rel="noopener noreferrer">Dashboard</a>
+        </div>
       </div>
-      <div class="card">
-        <h3>Sales Forecasting for a Kenyan Baby Retailer Streamlit.app</h3>
-        <p>A simple Sales Forecasting for a Kenyan Baby Retailer Streamlit.app.</p>
-        <a class="project-link" href="https://baby-retail-forecast.streamlit.app/" target="_blank" rel="noopener noreferrer">View Project</a>
-      </div>
-        <div class="card">
-        <h3>Sales Forecasting for a Kenyan Baby Retailer (Tableau Dashboard)</h3>
-        <p>An interactive Tableau dashboard that forecasts sales for a Kenyan baby retailer, with an executive overview of key trends.</p>
-        <a class="project-link" href="https://public.tableau.com/app/profile/otieno.owino/viz/SalesForecasting_17927578408620/ExecutiveOverview" target="_blank" rel="noopener noreferrer">View Project</a>
-      </div>
-       </div>
+    </div>
   </section>
 </main>
 
 <footer>
-  <p>@owinocall 0743826266</p>
+  <p>&copy; 2026 Dalmas Otieno. All rights reserved.</p>
 </footer>
 
 <script src="../assets/js/script.js"></script>

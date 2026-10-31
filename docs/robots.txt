@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dalmasotieno.github.io/projecthub/sitemap.xml
