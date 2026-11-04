@@ -537,3 +537,9 @@ textarea:focus-visible {
   .copy-btn:hover { background: #e8eaed; color: #121417; }
   .to-top { background: #1565c0; }
 }
+
+/* ---------- Contact actions ---------- */
+.contact-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; align-items: center; margin-bottom: 30px; }
+.contact-actions .copy-btn { margin: 0; }
+.contact-grid { grid-template-columns: repeat(2, 1fr); max-width: 800px; margin-left: auto; margin-right: auto; }
+@media (max-width: 600px) { .contact-grid { grid-template-columns: 1fr; } }

@@ -6,8 +6,18 @@
   <meta name="color-scheme" content="light dark">
   <title>Contact | Dalmas Otieno</title>
   <meta name="description" content="Get in touch with Dalmas Otieno, Web Developer and Data Scientist in Nairobi, by email, WhatsApp, LinkedIn or the contact form.">
+  <meta name="theme-color" content="#222222">
+  <link rel="icon" href="../assets/images/favicon.png">
+  <link rel="canonical" href="https://dalmasotieno.github.io/projecthub/contact/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contact | Dalmas Otieno">
+  <meta property="og:description" content="Contact Dalmas Otieno by email, WhatsApp, LinkedIn or the contact form.">
+  <meta property="og:image" content="https://dalmasotieno.github.io/projecthub/assets/images/preview.png">
+  <meta property="og:url" content="https://dalmasotieno.github.io/projecthub/contact/">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link rel="stylesheet" href="../assets/css/style.css">
-     <link rel="icon" href="../assets/images/favicon.png">
 </head>
 <body>
 
@@ -21,10 +31,7 @@
       <li><a href="../skills/">Skills</a></li>
       <li><a href="../projects/">Projects</a></li>
       <li><a href="../contact/" class="active">Contact</a></li>
-      
     </ul>
-    <p class="availability"><a class="project-link" href="https://calendly.com/otieno-owino-student/30min" target="_blank" rel="noopener noreferrer">Book a 15-minute call</a></p>
-    <p class="copy-row"><button type="button" class="copy-btn" data-copy="dalmasotieno2024@gmail.com" aria-live="polite">Copy email address</button></p>
   </nav>
 </header>
 
@@ -33,6 +40,11 @@
     <h2>Contact Me</h2>
     <p class="contact-intro">Reach me through any of these channels, or send a message below.</p>
     <p class="availability">I reply to messages within 2 working days.</p>
+
+    <div class="contact-actions">
+      <a class="project-link" href="https://calendly.com/otieno-owino-student/30min" target="_blank" rel="noopener noreferrer">Book a call</a>
+      <button type="button" class="copy-btn" data-copy="dalmasotieno2024@gmail.com" aria-live="polite">Copy email address</button>
+    </div>
 
     <div class="contact-grid">
       <!-- Email -->
@@ -47,12 +59,6 @@
         <span class="contact-text"><strong>GitHub</strong><span>github.com/Dalmasotieno</span></span>
       </a>
 
-      <!-- Facebook: replace YOUR_FACEBOOK_USERNAME (or delete this card) -->
-      <a class="contact-card facebook" href="https://www.facebook.com/YOUR_FACEBOOK_USERNAME" target="_blank" rel="noopener noreferrer">
-        <span class="contact-icon"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></span>
-        <span class="contact-text"><strong>Facebook</strong><span>Dalmas Otieno</span></span>
-      </a>
-
       <!-- WhatsApp -->
       <a class="contact-card whatsapp" href="https://wa.me/254743826266?text=Hello%20Dalmas%2C%20I%20found%20your%20portfolio" target="_blank" rel="noopener noreferrer">
         <span class="contact-icon"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5l1-1.5-2-1-1 .8c-.8-.4-1.6-1.2-2-2l.8-1-1-2z"/></svg></span>
@@ -63,12 +69,6 @@
       <a class="contact-card linkedin" href="https://www.linkedin.com/in/dalmas-otieno/" target="_blank" rel="noopener noreferrer">
         <span class="contact-icon"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></span>
         <span class="contact-text"><strong>LinkedIn</strong><span>linkedin.com/in/dalmas-otieno</span></span>
-      </a>
-
-      <!-- X: replace YOUR_X_HANDLE (or delete this card) -->
-      <a class="contact-card x" href="https://x.com/YOUR_X_HANDLE" target="_blank" rel="noopener noreferrer">
-        <span class="contact-icon"><svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path d="M18.9 2H22l-7.2 8.2L23 22h-6.6l-5.2-6.8L5.3 22H2.2l7.7-8.8L2 2h6.8l4.7 6.2L18.9 2zm-1.2 18h1.8L7.4 3.9H5.5L17.7 20z"/></svg></span>
-        <span class="contact-text"><strong>X</strong><span>@yourhandle</span></span>
       </a>
     </div>
 
@@ -82,33 +82,34 @@
       <button type="submit">Send Message</button>
     </form>
     <p id="formMessage" role="status" aria-live="polite"></p>
+
     <h3 class="form-title faq-title">Frequently asked questions</h3>
-<div class="faq">
-  <details>
-    <summary>What tools do you use?</summary>
-    <p>For data work I use Python (including PySpark), SQL, Tableau and machine learning. For websites I use HTML, CSS and JavaScript, with Git and GitHub for version control.</p>
-  </details>
+    <div class="faq">
+      <details>
+        <summary>What tools do you use?</summary>
+        <p>For data work I use Python (including PySpark), SQL, Tableau and machine learning. For websites I use HTML, CSS and JavaScript, with Git and GitHub for version control.</p>
+      </details>
 
-  <details>
-    <summary>What kind of projects do you take on?</summary>
-    <p>Dashboards, forecasting models and responsive websites, as well as collaborations and full-time roles.</p>
-  </details>
+      <details>
+        <summary>What kind of projects do you take on?</summary>
+        <p>Dashboards, forecasting models and responsive websites, as well as collaborations and full-time roles.</p>
+      </details>
 
-  <details>
-    <summary>Can I see examples of your work?</summary>
-    <p>Yes. The Projects page has a full case study on sales forecasting for a Kenyan retailer, with results, slides, a live app and a dashboard.</p>
-  </details>
+      <details>
+        <summary>Can I see examples of your work?</summary>
+        <p>Yes. The Projects page has a full case study on sales forecasting for a Kenyan retailer, with results, slides, a live app and a dashboard.</p>
+      </details>
 
-  <details>
-    <summary>How does a project start?</summary>
-    <p>Send me a message with what you need and the data or content you have. I will reply with questions and a suggested plan before any work begins.</p>
-  </details>
+      <details>
+        <summary>How does a project start?</summary>
+        <p>Send me a message with what you need and the data or content you have. I will reply with questions and a suggested plan before any work begins.</p>
+      </details>
 
-  <details>
-    <summary>How long does a project take?</summary>
-    <p>It depends on the size of the work and the state of the data. I give a time estimate once I understand what you need.</p>
-  </details>
-</div>
+      <details>
+        <summary>How long does a project take?</summary>
+        <p>It depends on the size of the work and the state of the data. I give a time estimate once I understand what you need.</p>
+      </details>
+    </div>
   </section>
 </main>
 
